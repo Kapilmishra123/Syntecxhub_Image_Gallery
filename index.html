@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vista Gallery</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">VISTA<span>GALLERY</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="subtitle">WELCOME TO VISTA GALLERY</p>
+
+            <h1>
+                Explore the World
+                <span>Through Images</span>
+            </h1>
+
+            <p class="hero-text">
+                Discover beautiful moments, breathtaking destinations,
+                delicious food and amazing architecture.
+            </p>
+
+            <a href="#gallery" class="hero-btn">
+                Explore Gallery
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+
+        <div class="section-heading">
+            <p>OUR COLLECTION</p>
+
+            <h2>Beautiful Moments</h2>
+
+            <span>
+                Browse through our carefully selected collection.
+            </span>
+        </div>
+
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="nature">
+                Nature
+            </button>
+
+            <button class="filter-btn" data-filter="travel">
+                Travel
+            </button>
+
+            <button class="filter-btn" data-filter="food">
+                Food
+            </button>
+
+            <button class="filter-btn" data-filter="architecture">
+                Architecture
+            </button>
+
+        </div>
+
+
+        <!-- Gallery -->
+        <div class="gallery-grid">
+
+            <!-- Nature -->
+            <div class="gallery-item" data-category="nature">
+
+                <img
+                    src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80"
+                    alt="Beautiful nature landscape"
+                >
+
+                <div class="image-overlay">
+                    <h3>Beautiful Nature</h3>
+                    <p>Nature</p>
+                </div>
+
+            </div>
+
+
+            <!-- Travel -->
+            <div class="gallery-item" data-category="travel">
+
+                <img
+                    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                    alt="Beautiful beach travel destination"
+                >
+
+                <div class="image-overlay">
+                    <h3>Beach Destination</h3>
+                    <p>Travel</p>
+                </div>
+
+            </div>
+
+
+            <!-- Food -->
+            <div class="gallery-item" data-category="food">
+
+                <img
+                    src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+                    alt="Beautiful restaurant interior"
+                >
+
+                <div class="image-overlay">
+                    <h3>Fine Dining</h3>
+                    <p>Food</p>
+                </div>
+
+            </div>
+
+
+            <!-- Architecture -->
+            <div class="gallery-item" data-category="architecture">
+
+                <img
+                    src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=80"
+                    alt="Modern architecture building"
+                >
+
+                <div class="image-overlay">
+                    <h3>Modern Architecture</h3>
+                    <p>Architecture</p>
+                </div>
+
+            </div>
+
+
+            <!-- Nature -->
+            <div class="gallery-item" data-category="nature">
+
+                <img
+                    src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80"
+                    alt="Green forest"
+                >
+
+                <div class="image-overlay">
+                    <h3>Green Forest</h3>
+                    <p>Nature</p>
+                </div>
+
+            </div>
+
+
+            <!-- Travel -->
+            <div class="gallery-item" data-category="travel">
+
+                <img
+                    src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80"
+                    alt="Mountain travel destination"
+                >
+
+                <div class="image-overlay">
+                    <h3>Mountain Adventure</h3>
+                    <p>Travel</p>
+                </div>
+
+            </div>
+
+
+            <!-- Food -->
+            <div class="gallery-item" data-category="food">
+
+                <img
+                    src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+                    alt="Delicious food"
+                >
+
+                <div class="image-overlay">
+                    <h3>Delicious Food</h3>
+                    <p>Food</p>
+                </div>
+
+            </div>
+
+
+            <!-- Architecture -->
+            <div class="gallery-item" data-category="architecture">
+
+                <img
+                    src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80"
+                    alt="Modern office architecture"
+                >
+
+                <div class="image-overlay">
+                    <h3>Modern Interior</h3>
+                    <p>Architecture</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <button class="close-btn" id="closeBtn">
+            &times;
+        </button>
+
+        <button class="prev-btn" id="prevBtn">
+            &#10094;
+        </button>
+
+        <img id="lightboxImage" src="" alt="Gallery Preview">
+
+        <button class="next-btn" id="nextBtn">
+            &#10095;
+        </button>
+
+    </div>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <div class="section-heading">
+
+            <p>ABOUT US</p>
+
+            <h2>Moments Worth Remembering</h2>
+
+            <span>
+                Vista Gallery is a collection of beautiful visuals
+                created to showcase the beauty of nature, travel,
+                food and architecture.
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 VISTA GALLERY. All Rights Reserved.
+        </p>
+
+        <p>
+            Created with HTML, CSS & JavaScript
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
